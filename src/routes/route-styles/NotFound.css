@@ -1,0 +1,67 @@
+.not-found-button {
+    background-color: transparent;
+    border: 1px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 55vw;
+    margin-bottom: 25px;
+}
+
+.nf-flag-img {
+    width: 40vw;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .not-found-button {
+        border: 3px solid #012868;
+        width: 200px;
+        margin-bottom: 0px;
+        transition: all 0.5s ease;
+    }
+
+    .not-found-button:hover {
+        background-color: #012868;
+        color: #ffffff;
+    }
+
+    .nf.red-border {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 40px;
+    }
+
+    .nf-stripe-container {
+        position: relative;
+        margin-bottom: 210px;
+    }
+
+    .red.nf-stripe-bottom {
+        position: absolute;
+        width: 100vw;
+        height: 30px;
+        top: 120px;
+    }
+
+    .blue.nf-stripe-bottom {
+        position: absolute;
+        width: 100vw;
+        height: 30px;
+        top: 60px;
+    }
+
+    .white.nf-stripe-bottom {
+        position: absolute;
+        width: 100vw;
+        height: 30px;
+        top: 90px;
+        margin: 0;
+    }
+
+    .nf-flag-img {
+        width: 20vw;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+}

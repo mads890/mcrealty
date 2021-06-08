@@ -1,0 +1,47 @@
+.about-img {
+    width: 90vw;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.todo-grid {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.todo-item {
+    height: 30vh;
+    color: #ffffff;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.right {
+    text-align: right;
+}
+
+.item-one {
+    background-image: url(https://www.conserve-energy-future.com/wp-content/uploads/2013/05/biofuel-tanks-filled-biodiesel.jpg);
+    background-size: cover;
+}
+
+.item-two {
+    background-image: url(https://www.outsideonline.com/sites/default/files/styles/full-page/public/2018/07/09/campfire-backcountry-pot_h.jpg?itok=Qnx1rsSM);
+    background-size: cover;
+}
+
+.item-three {
+    background-image: url(https://i.pinimg.com/originals/e5/d4/bd/e5d4bdda010926b4aea3f447835c3bc9.jpg);
+    background-size: cover;
+}
+
+.item-four {
+    background-image: url(https://greatamericanwest.co/wp-content/uploads/Cheyenne-Frontier-Days.jpg);
+    background-size: cover;
+}
+
+.item-five {
+    background-image: url(https://www.outsideonline.com/sites/default/files/styles/full-page/public/2020/03/12/gem-lake-and-longs-peak-sunset_h.jpg?itok=uQRzVpNy);
+    background-size: cover;
+}

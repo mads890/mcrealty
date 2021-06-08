@@ -1,0 +1,238 @@
+.top-blue, .stripe-container, .bottom-red, .bottom-white, .bottom-blue {
+    display: none;
+}
+
+.home-img {
+    border: 1px solid black;
+    width: 85vw;
+    height: 85vw;
+    margin-top: 25px;
+}
+
+.intro {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.hello-button, .call-button {
+    background-color: transparent;
+    border: 1px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+button {
+    font-family: 'Lora';
+}
+
+.hello-button {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.home-main {
+    margin-top: 45px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.call-button {
+    width: 50vw;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+.flag-img {
+    width: 40vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-about, .footer-testimonials, .footer-calculator {
+    display: block;
+    width: 100%;
+    height: 25vh;
+    text-decoration: none;
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+.black {
+    color: #000000;
+}
+
+.footer-about {
+    background-image: url(../../images/boot.jpg);
+    background-repeat: none;
+    background-position: bottom;
+}
+
+.footer-testimonials {
+    background-image: url(../../images/skyline.jpeg);
+    background-size: cover
+}
+
+.footer-calculator {
+    background-image: url(../../images/carnival.jpg);
+    background-repeat: none;
+    background-position: center;
+}
+
+.red, .white, .blue {
+    width: 100%;
+    height: 15px;
+}
+
+.red {
+    background-color: #BF0A30;
+}
+
+.blue {
+    background-color: #012868;
+}
+
+@media screen and (min-width: 768px) {
+
+    .top-blue {
+        display: block;
+        width: 100%;
+        height: 40px;
+        background-color: #012868;
+    }
+
+    .stripe-container {
+        display: block;
+        position: relative;
+        z-index: -1;
+    }
+
+    .vert-red {
+        position: absolute;
+        width: 40px;
+        height: 170vh;
+        left: 0px;
+        background-color: #BF0A30;
+    }
+
+    .vert-white {
+        position: absolute;
+        width: 40px;
+        height: 170vh;
+        left: 40px;
+    }
+
+    .vert-blue {
+        position: absolute;
+        width: 40px;
+        height: 170vh;
+        left: 80px;
+        background-color: #012868;
+    }
+
+    .home-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home-img {
+        display: inline-block;
+        width: 30vw;
+        height: 30vw;
+        margin-left: 20vw;
+    }
+
+    .intro {
+        display: inline-block;
+        width: 30vw;
+        text-align: left;
+        margin-right: 10vw;
+    }
+
+    .listings-box {
+        width: 60vw;
+        height: 40vh;
+    }
+
+    .hello-button {
+        border: 3px solid #012868;
+        transition: all 0.5s ease;
+    }
+
+    .call-button {
+        width: 200px;
+        margin: 0px;
+        border: 3px solid #012868;
+        transition: all 0.5s ease;
+    }
+
+    .call-button:hover, .hello-button:hover {
+        background-color: #012868;
+        color: #ffffff;
+    }
+
+    .red-border, .white-border {
+        display: inline-block;
+    }
+
+    .call {
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .red-border {
+        border: 3px solid #BF0A30;
+    }
+
+    .white-border {
+        border: 3px solid #ffffff;
+    }
+
+    .flag-img {
+        width: 25vw;
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-about, .footer-testimonials, .footer-calculator {
+        height: 350px;
+        background-color: #000000;
+        transition: all 0.5s ease;
+    }
+
+    .footer-about:hover, .footer-testimonials:hover, .footer-calculator:hover {
+        opacity: 0.5;
+    }
+
+    .red, .white, .blue {
+        width: 30px;
+        height: 370px;
+    }
+
+    .bottom-blue {
+        display: block;
+        background-color: #012868;
+        height: 40px;
+        width: 100%;
+    }
+
+    .bottom-white {
+        display: block;
+        height: 40px;
+        width: 100%;
+    }
+
+    .bottom-red {
+        display: block;
+        background-color: #BF0A30;
+        height: 40px;
+        width: 100%;
+    }
+}

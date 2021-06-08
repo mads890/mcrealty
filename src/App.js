@@ -9,21 +9,17 @@ import NotFound from './routes/NotFound';
 
 export default class App extends Component {
 
-  toggleNav = () => {
-    /*
-    let nav = document.getElementById('links')
-    let hamburger = document.getElementById('ham')
-    let x = document.getElementById('x')
+  toggleNav = (e) => {
+    let nav = e.target.nextSibling
     if(!nav.classList.contains('active')) {
-      nav.classList.addClass('active')
-      hamburger.addClass('hidden')
-      x.removeClass('hidden')
+      nav.className += ' active'
     } else {
-      nav.classList.removeClass('active')
-      hamburger.removeClass('hidden')
-      x.addClass('hidden')
+      nav.className = 'nav-links-container'
     }
-    */
+  }
+
+  closeNav = (e) => {
+    e.target.parentNode.className = 'nav-links-container'
   }
 
   render() {
@@ -31,19 +27,18 @@ export default class App extends Component {
       <div className='app'>
         <div className='topbar'>
           <div className='left-box'>
-            <Link to='/'>MCR</Link>
+            <Link to='/' className='landing-link'>MCR</Link>
           </div>
           <div className='center-box'>
-            <Link to='/'>Michael Cassat Realty</Link>
+            <Link to='/' className='landing-link'>Michael Cassat, Realtor®</Link>
           </div>
           <nav className='right-box'>
+            <button className='hamburger' id='ham' onClick={e => this.toggleNav(e)}>&#9776;</button>
             <div className='nav-links-container' id='links'>
-              <Link to='/about' className='nav-link'>About Cheyenne</Link>
-              <Link to='/testimonials' className='nav-link'>Testimonials</Link>
-              <Link to='/calculator' className='nav-link'>Mortgage Calculator</Link>
+              <Link to='/about' onClick={e => this.closeNav(e)} className='nav-link'>About Cheyenne</Link>
+              <Link to='/testimonials' onClick={e => this.closeNav(e)} className='nav-link'>Testimonials</Link>
+              <Link to='/calculator' onClick={e => this.closeNav(e)} className='nav-link last'>Mortgage Calculator</Link>
             </div>
-            <button className='hamburger' id='ham' onClick={this.toggleNav()}>&#9776;</button>
-            <button className='x hidden' id='x' onClick={this.toggleNav()}>X</button>
           </nav>
         </div>
         <main>
@@ -55,17 +50,17 @@ export default class App extends Component {
           />
           <Route
             exact
-            path={'/'}
+            path={'/about'}
             component={About}
           />
           <Route
             exact
-            path={'/'}
+            path={'/testimonials'}
             component={Testimonials}
           />
           <Route
             exact
-            path={'/'}
+            path={'/calculator'}
             component={Calculator}
           />
           <Route component={NotFound} />

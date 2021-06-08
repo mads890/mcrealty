@@ -1,0 +1,46 @@
+.iframe-calculator {
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+    .calc-stripe-top, .calc-stripe-bottom {
+        position: absolute;
+    }
+
+    .calc-stripe-container {
+        position: relative;
+    }
+
+    .iframe-calculator {
+        width: 70vw;
+        height: 120vh;
+    }
+
+    .blue.calc-stripe-top {
+        height: 121vh;
+        width: 30px;
+        top: 0vh;
+        left: 30px
+    }
+
+    .red.calc-stripe-top {
+        height: 121vh;
+        width: 30px;
+        left: 90px;
+    }
+
+    .blue.calc-stripe-bottom {
+        height: 121vh;
+        width: 30px;
+        bottom: 0vh;
+        right: 30px
+    }
+
+    .red.calc-stripe-bottom {
+        height: 121vh;
+        width: 30px;
+        right: 90px;
+        bottom: 0vh;
+    }
+}
