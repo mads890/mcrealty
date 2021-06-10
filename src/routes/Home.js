@@ -21,7 +21,7 @@ function Home() {
             </header>
             <section className='home-main'>
                 <h2>Welcome To Cheyenne. We're So Glad To Have You.</h2>
-                <iframe src='http://cheyenne.paragonrels.com/idx/idx.aspx?Mls=CLSC&Subscriber=f50e4a7e-2554-4bcb0-a673-48ba03fd58dd' /* src='http://cheyenne.paragonrels.com/idx/idx.aspx?Mls=CLSC&Subscriber=f50e4a7e-2554-4bcb0-a673-48ba03fd58dd&MLSSearch=1' */ alt='local listings' /*(sandbox=''? - 'best for html content embedding that dn rely on js rendering')*/ className='listings-box' />
+                <iframe src='http://cheyenne.paragonrels.com/idx/idx.aspx?Mls=CLSC&Subscriber=f50e4a7e-2554-4bcb0-a673-48ba03fd58dd' /* src='http://cheyenne.paragonrels.com/idx/idx.aspx?Mls=CLSC&Subscriber=f50e4a7e-2554-4bcb0-a673-48ba03fd58dd&MLSSearch=1' */ alt='local listings' /*(sandbox=''? - 'best for html content embedding that dn rely on js rendering')*/ className='listings-box' title="Cheyenne Wyoming real estate listings" />
                 <div className='button-box'>
                     <div className='red-border call'><div className='white-border'><button className='call-button'>Schedule Call</button></div></div>
                     <div className='red-border call'><div className='white-border'><button className='call-button'>Schedule Consultation</button></div></div>

@@ -13,7 +13,7 @@ function Calculator() {
                 <div className='blue calc-stripe-top'></div>
             </div>
             <section className='calculator-main'>
-            <iframe className='iframe-calculator' src="https://www.mortgagecalculator.org/webmasters/?downpayment=50000&homevalue=300000&loanamount=250000&interestrate=4&loanterm=30&propertytax=2400&pmi=1&homeinsurance=1000&monthlyhoa=0"></iframe>
+            <iframe className='iframe-calculator' src="https://www.mortgagecalculator.org/webmasters/?downpayment=50000&homevalue=300000&loanamount=250000&interestrate=4&loanterm=30&propertytax=2400&pmi=1&homeinsurance=1000&monthlyhoa=0" title="mortgage calculator form from mortgage calculator dot org"></iframe>
             </section>
             <div className='calc-stripe-container'>
                 <div className='red calc-stripe-bottom'></div>
